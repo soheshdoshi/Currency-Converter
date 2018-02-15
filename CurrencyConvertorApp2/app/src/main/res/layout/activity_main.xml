@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sohesh_doshi on 15/2/18 7:17 PM
+  ~ Copyright(c) 2018. All rights reserved.
+  ~
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:id="@+id/layout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+
+    <TextView
+        android:id="@+id/Malaysian_Ringgit_id"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:labelFor="@id/Malaysian_Ringgit_id"
+        android:text="Malaysian Ringgit"
+        android:textAlignment="center"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Base_Amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Malaysian_Ringgit_id"
+        android:layout_alignTop="@+id/Malaysian_Ringgit_id"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/Malaysian_Ringgit_id"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        tools:text="Enter Amount/Result" />
+
+    <TextView
+        android:id="@+id/Indian_Rupee_id"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Malaysian_Ringgit_id"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:labelFor="@id/indian_Amount_id"
+        android:text="Indian Rupee"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/indian_Amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Indian_Rupee_id"
+        android:layout_alignStart="@+id/Base_Amount_id"
+        android:layout_alignTop="@+id/Indian_Rupee_id"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        tools:text="Enter Amount/Result" />
+
+    <TextView
+        android:id="@+id/US_Dollar_id"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Indian_Rupee_id"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:labelFor="@id/indian_Amount_id"
+        android:text="US Dollar "
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/US_Amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/US_Dollar_id"
+        android:layout_alignBottom="@+id/US_Dollar_id"
+        android:layout_alignStart="@+id/indian_Amount_id"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        tools:text="Enter Amount/Result" />
+
+    <TextView
+        android:id="@+id/Bahraini_Dinar_id"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/US_Dollar_id"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:labelFor="@id/Bahraini_Dinar_id"
+        android:text="Bahraini Dinar"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Bahraini_Amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Russian_Ruble_id"
+        android:layout_alignStart="@+id/US_Amount_id"
+        android:layout_alignTop="@+id/Bahraini_Dinar_id"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        tools:text="Enter Amount/Result" />
+
+    <TextView
+        android:id="@+id/Russian_Ruble_id"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Bahraini_Dinar_id"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:labelFor="@id/Russian_Ruble_id"
+        android:text="Russian Ruble"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Russian_Amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Hungarian_Forint_id"
+        android:layout_alignStart="@+id/Bahraini_Amount_id"
+        android:layout_alignTop="@+id/Russian_Ruble_id"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        tools:text="Enter Amount/Result" />
+
+    <TextView
+        android:id="@+id/Hungarian_Forint_id"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Russian_Ruble_id"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:labelFor="@id/Hungarian_Forint_id"
+        android:text="Hungarian Forint"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Hungarian_Amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Hungarian_Forint_id"
+        android:layout_alignStart="@+id/Russian_Amount_id"
+        android:layout_alignTop="@+id/Hungarian_Forint_id"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        tools:text="Enter Amount/Result" />
+
+    <TextView
+        android:id="@+id/Japanese_Yen_id"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Hungarian_Forint_id"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:labelFor="@id/Japanese_Yen_id"
+        android:text="Japanese Yen"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Japanese_Amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Swiss_Franc_id"
+        android:layout_alignStart="@+id/Hungarian_Amount_id"
+        android:layout_alignTop="@+id/Japanese_Yen_id"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        tools:text="Enter Amount/Result" />
+
+    <TextView
+        android:id="@+id/Swiss_Franc_id"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Japanese_Yen_id"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:labelFor="@id/Swiss_Franc_id"
+        android:text="Swiss Franc"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/Swiss_Amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Reset_Button_id"
+        android:layout_alignStart="@+id/Japanese_Amount_id"
+        android:layout_alignTop="@+id/Swiss_Franc_id"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        tools:text="Enter Amount/Result" />
+
+    <Button
+        android:id="@+id/Button_Malaysian_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Base_Amount_id"
+        android:layout_alignTop="@+id/Base_Amount_id"
+        android:layout_toEndOf="@+id/Base_Amount_id"
+        android:text="\?"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Button_Indian_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/indian_Amount_id"
+        android:layout_alignTop="@+id/indian_Amount_id"
+        android:layout_toEndOf="@+id/indian_Amount_id"
+        android:text="\?"
+        android:textSize="12sp" />
+    <Button
+        android:id="@+id/Button_Us_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/US_Amount_id"
+        android:layout_alignTop="@+id/US_Amount_id"
+        android:layout_toEndOf="@+id/US_Amount_id"
+        android:text="\?"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Button_Bahraini_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Bahraini_Amount_id"
+        android:layout_alignTop="@+id/Bahraini_Amount_id"
+        android:layout_toEndOf="@+id/Bahraini_Amount_id"
+        android:text="\?"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Button_Rassan_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Russian_Amount_id"
+        android:layout_alignTop="@+id/Russian_Amount_id"
+        android:layout_toEndOf="@+id/Russian_Amount_id"
+        android:text="\?"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Button_Hun_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Hungarian_Amount_id"
+        android:layout_alignTop="@+id/Hungarian_Amount_id"
+        android:layout_toEndOf="@+id/Hungarian_Amount_id"
+        android:text="\?"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Button_Jap_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Japanese_Amount_id"
+        android:layout_alignTop="@+id/Japanese_Amount_id"
+        android:layout_toEndOf="@+id/Japanese_Amount_id"
+        android:text="\?"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Button_Swiss_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Swiss_Amount_id"
+        android:layout_alignTop="@+id/Swiss_Amount_id"
+        android:layout_toEndOf="@+id/Swiss_Amount_id"
+        android:text="\?"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/Reset_Button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Swiss_Amount_id"
+        android:layout_below="@+id/Swiss_Franc_id"
+        android:layout_marginEnd="101dp"
+        android:layout_marginTop="12dp"
+        android:text="Reset"
+        android:textSize="10sp" />
+
+</RelativeLayout>

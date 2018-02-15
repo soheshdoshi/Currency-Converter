@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sohesh_doshi on 15/2/18 7:17 PM
+  ~ Copyright(c) 2018. All rights reserved.
+  ~
+  -->
+
+<font-family xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:fontProviderAuthority="com.google.android.gms.fonts"
+        app:fontProviderPackage="com.google.android.gms"
+        app:fontProviderQuery="name=Abhaya Libre&amp;weight=500"
+        app:fontProviderCerts="@array/com_google_android_gms_fonts_certs">
+</font-family>

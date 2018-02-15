@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sohesh_doshi on 15/2/18 7:17 PM
+  ~ Copyright(c) 2018. All rights reserved.
+  ~
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Reset_Button"
+        android:icon="@drawable/ic_action_reset"
+        android:title="Reset"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

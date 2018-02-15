@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Sohesh_doshi on 15/2/18 7:17 PM
+  ~ Copyright(c) 2018. All rights reserved.
+  ~
+  -->
+
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abhaya_libre_medium</item>
+    </array>
+</resources>
